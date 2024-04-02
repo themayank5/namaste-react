@@ -10,6 +10,12 @@ const parent = React.createElement("div",{id:"parent"},[
         React.createElement("h2",{},"this is h2 tag from child2")
        ]
       
+       ),
+       React.createElement("div",{id:"child3"},[
+        React.createElement("h1",{},"this is h1 tag from child3"),
+        React.createElement("h2",{},"this is h2 tag from child3")
+       ]
+      
        )
 ]
                
