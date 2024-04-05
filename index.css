@@ -1,3 +1,44 @@
-#roott{
-    color: red;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.logo{
+    width:160px
+}
+.nav-item ul{
+    display: flex;
+    margin: 35px 0px
+    
+}
+.nav-item ul li{
+    padding:0px 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 34px;
+    
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.food_logo{
+    width: 307px;
+}
+.res-card{
+    padding: 5px;
+    width: 200px;
+    border: 1px solid ;
+}
+.res-card:hover{
+    padding: 5px;
+    width: 200px;
+    border: 1px solid ;
+    box-shadow: 0px 0px 10 red;
+    cursor: pointer;
+}
+h5{
+    margin: 10px 0px;
 }
