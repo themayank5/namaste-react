@@ -25,7 +25,7 @@
     
 }
 .food_logo{
-    width: 307px;
+    width: 302px;
 }
 .res-card{
     padding: 5px;
@@ -41,4 +41,8 @@
 }
 h5{
     margin: 10px 0px;
+}
+.filter-btn{
+    margin:10px;
+    cursor: pointer;
 }

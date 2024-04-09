@@ -1,94 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-
-const Header = () =>{
-    return(
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png" />
-            </div>
-            <div className="nav-item">
-                <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
-const styleCard =  {
-    backgroundColor:"#f0f0f0",
-    width: '20%',
-    border: '1px solid',
-    margin: '10px 5px',
-    
-}
-
-
-// const resObj1 = {
-    
-//         "info": {
-//           "id": "90709",
-//           "name": [
-//             "Barbeque Nation ",
-//             "KFC",
-//             "Pizza Hut",
-//             "Domono",
-//             "Burger King",
-//             "Burgur Singh"
-            
-//           ],
-//           "cloudinaryImageId": "atchbvbnwn9kumsbcxv5",
-//           "locality": [
-//             "LAXMI NAGAR",
-//             "Preet vihar",
-//             "Nirman vihar",
-//             "vaishali",
-//             "anand vihar",
-//             "yamuna bank",
-//           ],
-//           "areaName": "V3S MALL",
-//           "costForTwo": "₹300 for two",
-//           "cuisines": [
-//             "North Indian",
-//             "Barbecue",
-//             "Biryani",
-//             "Kebabs",
-//             "Mughlai",
-//             "Desserts"
-//           ],
-//           "avgRating": [
-//             3.7, 3.7, 4.6, 5.5, 6.4, 2.1
-//           ],
-//           "parentId": "10804",
-//           "avgRatingString": "3.7",
-//           "totalRatingsString": "1K+",
-//           "sla": {
-//             "deliveryTime": 38,
-//             "lastMileTravel": 4.8,
-//             "serviceability": "SERVICEABLE",
-//             "slaString": "35-40 mins",
-//             "lastMileTravelString": "4.8 km",
-//             "iconType": "ICON_TYPE_EMPTY"
-//           },
-//           "availability": {
-//             "nextCloseTime": "2024-04-04 16:30:00",
-//             "opened": true
-//           }
-//         }
-      
-// }
-
-
 const resList = [
     {
       "info": {
         "id": "636890",
         "name": "Chinese Wok",
+        
         "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
         "locality": "1st Phase",
         "areaName": "Mayur Vihar",
@@ -100,11 +15,12 @@ const resList = [
           "Desserts"
         ],
         "avgRating": 4.2,
+        "deliveryTime": 30,
         "parentId": "61955",
         "avgRatingString": "4.2",
         "totalRatingsString": "500+",
         "sla": {
-          "deliveryTime": 30,
+          
           "lastMileTravel": 3.5,
           "serviceability": "SERVICEABLE",
           "slaString": "25-30 mins",
@@ -199,8 +115,9 @@ const resList = [
         "parentId": "637",
         "avgRatingString": "3.8",
         "totalRatingsString": "5K+",
+        "deliveryTime": 38,
         "sla": {
-          "deliveryTime": 38,
+         
           "lastMileTravel": 5,
           "serviceability": "SERVICEABLE",
           "slaString": "35-40 mins",
@@ -308,8 +225,9 @@ const resList = [
         "parentId": "721",
         "avgRatingString": "4.0",
         "totalRatingsString": "1K+",
+        "deliveryTime": 26,
         "sla": {
-          "deliveryTime": 26,
+          
           "lastMileTravel": 1.6,
           "serviceability": "SERVICEABLE",
           "slaString": "25-30 mins",
@@ -418,8 +336,9 @@ const resList = [
         "parentId": "10804",
         "avgRatingString": "3.5",
         "totalRatingsString": "100+",
+        "deliveryTime": 41,
         "sla": {
-          "deliveryTime": 39,
+          
           "lastMileTravel": 4.8,
           "serviceability": "SERVICEABLE",
           "slaString": "35-40 mins",
@@ -518,8 +437,9 @@ const resList = [
         "parentId": "1776",
         "avgRatingString": "3.9",
         "totalRatingsString": "100+",
+        "deliveryTime": 51,
         "sla": {
-          "deliveryTime": 39,
+          
           "lastMileTravel": 3.6,
           "serviceability": "SERVICEABLE",
           "slaString": "35-40 mins",
@@ -635,8 +555,9 @@ const resList = [
         "parentId": "401169",
         "avgRatingString": "4.4",
         "totalRatingsString": "100+",
+        "deliveryTime": 22,
         "sla": {
-          "deliveryTime": 22,
+          
           "lastMileTravel": 1.4,
           "serviceability": "SERVICEABLE",
           "slaString": "17-27 mins",
@@ -748,8 +669,9 @@ const resList = [
         "parentId": "2438",
         "avgRatingString": "3.3",
         "totalRatingsString": "100+",
+        "deliveryTime": 11,
         "sla": {
-          "deliveryTime": 40,
+         
           "lastMileTravel": 4.8,
           "serviceability": "SERVICEABLE",
           "slaString": "40-45 mins",
@@ -939,8 +861,9 @@ const resList = [
         "parentId": "547",
         "avgRatingString": "4.3",
         "totalRatingsString": "500+",
+        "deliveryTime": 9,
         "sla": {
-          "deliveryTime": 27,
+         
           "lastMileTravel": 3.5,
           "serviceability": "SERVICEABLE",
           "slaString": "25-30 mins",
@@ -1031,66 +954,5 @@ const resList = [
     }
   ]
 
-//props property
-const RestaurentCard = (props) =>{
-    const{resData} = props;
-    const{name,locality,cuisines,areaName,costForTwo} = resData.info;
-    // console.log(resList[0].info.name);
-    return(
-        <div className="res-card" style={styleCard}>
-           <img className="food_logo" alt="food logo" src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-           <h5>Restaurent Name:{name}</h5>
-           <h5>locality:{locality}</h5>
-           <h5>cuisines:{cuisines[0]}</h5>
-           <h5>Area Name:{areaName}</h5>
-           <h5>cost For Two:{costForTwo}</h5>
-           
-           
-           
-           
-        </div>
-    )
-}
 
-const Body = () =>{
-    return(
-        <div className="body">
-            <div className="search"></div>
-            <div className="res-container">
-
-                {/* <RestaurentCard resData={resList[0]}/>
-                <RestaurentCard resData={resList[1]}/>
-                <RestaurentCard resData={resList[2]}/>
-                <RestaurentCard resData={resList[3]}/> */}
-                
-
-                {/* map function */}
-                {
-                    resList.map((restaurent1) =>(
-                        <RestaurentCard key={restaurent1.info.id} resData={restaurent1} />
-                    ))
-                }
-                
-                
-                
-                
-            </div>
-        </div>
-    )
-}
-
-
-
-
-const AppLayout = () =>{
-    return(
-        <div className="app">
-            <Header />
-            <Body />
-
-        </div>
-    )
-}
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+  export default resList;
